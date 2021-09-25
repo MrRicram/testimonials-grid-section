@@ -16,4 +16,151 @@ body {
   font-weight: 500;
   font-size: 0.8125rem;
 }
+
+main {
+  height: 100%;
+}
+
+main .container {
+  padding: 7.1rem 1.5rem;
+}
+
+main .container .grid {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+main .container .grid > * {
+  border-radius: 0.625rem;
+  padding: 1.625rem 2rem 2rem 2rem;
+  -webkit-box-shadow: 2.5rem 3.5rem 5rem -2.9375rem rgba(72, 85, 106, 0.25);
+          box-shadow: 2.5rem 3.5rem 5rem -2.9375rem rgba(72, 85, 106, 0.25);
+}
+
+main .container .grid .testimonial .profile {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 0.9375rem;
+          column-gap: 0.9375rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 2rem auto;
+      grid-template-columns: 2rem auto;
+}
+
+main .container .grid .testimonial .profile .avatar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  height: 1.875rem;
+  width: 1.875rem;
+  position: relative;
+}
+
+main .container .grid .testimonial .profile .avatar img {
+  border-radius: 50%;
+  width: 1.875rem;
+  position: relative;
+  z-index: 2;
+}
+
+main .container .grid .testimonial .profile .avatar::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 2.125rem;
+  width: 2.125rem;
+  z-index: 1;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .container .grid .testimonial .profile .info {
+  row-gap: 0.125rem;
+}
+
+main .container .grid .testimonial .profile .info h3 {
+  font-size: 0.8125rem;
+}
+
+main .container .grid .testimonial .profile .info p {
+  font-size: 0.6875;
+  opacity: .5;
+}
+
+main .container .grid .testimonial .description {
+  margin-top: 1.25rem;
+}
+
+main .container .grid .testimonial .description h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0.05px;
+  margin-bottom: 1.25rem;
+}
+
+main .container .grid .testimonial .description p {
+  opacity: .7;
+}
+
+main .container .grid .daniel {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 1.5rem;
+  background-color: #7541c8;
+  color: white;
+}
+
+main .container .grid .daniel .profile .avatar::after {
+  background-color: #a674f1;
+}
+
+main .container .grid .jonathan {
+  background-color: #48556a;
+  color: white;
+}
+
+main .container .grid .jean-kira {
+  background-color: white;
+  color: #48556a;
+}
+
+main .container .grid .patrick {
+  background-color: #19212e;
+  color: white;
+}
+
+main .container .grid .patrick .profile .avatar::after {
+  background-color: #7541c8;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+footer .attribution {
+  color: #48556a;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: #19212e;
+  font-weight: bold;
+}
+
+footer .attribution a:hover {
+  color: #7541c8;
+}
 /*# sourceMappingURL=style.css.map */
