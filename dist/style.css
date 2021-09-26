@@ -128,7 +128,7 @@ main .container .grid .jonathan {
   color: white;
 }
 
-main .container .grid .jean-kira {
+main .container .grid .jeanette {
   background-color: white;
   color: #48556a;
 }
@@ -140,6 +140,11 @@ main .container .grid .patrick {
 
 main .container .grid .patrick .profile .avatar::after {
   background-color: #7541c8;
+}
+
+main .container .grid .kira {
+  background-color: white;
+  color: #48556a;
 }
 
 footer {
@@ -162,5 +167,78 @@ footer .attribution a {
 
 footer .attribution a:hover {
   color: #7541c8;
+}
+
+@media only screen and (min-width: 48rem) {
+  main .container {
+    padding: 10.25rem 3rem;
+  }
+  main .container .grid {
+    margin: 0 auto;
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    max-width: 69.375rem;
+  }
+  main .container .grid .daniel {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 3 / 2;
+    background-position: top right 5rem;
+  }
+  main .container .grid .patrick {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  main .container .grid .kira {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 4 / 1 / 5 / 3;
+  }
+}
+
+@media only screen and (min-width: 69.375rem) {
+  main .container .grid {
+    padding-left: 0;
+    padding-right: 0;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  main .container .grid .daniel {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  main .container .grid .jeanette {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  main .container .grid .patrick {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  main .container .grid .kira {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 4 / 3 / 5;
+  }
 }
 /*# sourceMappingURL=style.css.map */
