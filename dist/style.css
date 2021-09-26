@@ -23,12 +23,19 @@ main {
 
 main .container {
   padding: 7.1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .container .grid {
   display: -ms-grid;
   display: grid;
   row-gap: 1.5rem;
+  max-width: 20.4375rem;
 }
 
 main .container .grid > * {

@@ -22,10 +22,13 @@ main {
 
     .container {
         padding: 7.1rem 1.5rem;
+        display: flex;
+        justify-content: center;
         
         .grid {
             display: grid;
-            row-gap: 1.5rem;   
+            row-gap: 1.5rem;  
+            max-width: 20.4375rem; 
 
             > * {
                 border-radius: 0.625rem;
